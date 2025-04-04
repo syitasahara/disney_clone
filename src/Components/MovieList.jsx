@@ -31,7 +31,7 @@ function MovieList({genreId, index_}) {
              className={`text-[50px] text-white p-2 z-10 cursor-pointer 
             hidden md:block absolute ${index_%3==0?'mt-[100px]' : 'mt-[150px]'}`}/>
             
-            <div ref={elementRef} className='flex overflow-x-auto gap-8 scroll-smooth pt-4 px-3 pb-4'>
+            <div ref={elementRef} className='flex overflow-x-auto gap-8 no-scrollbar scroll-smooth pt-4 px-3 pb-4'>
                 {movieList.map((item, index)=>(
                     <>
                     {index_%3==0? <HrMovieCard movie={item}/>: <MovieCard key={index} movie={item}/>}
