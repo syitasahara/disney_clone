@@ -8,7 +8,7 @@ import { HiHome,
 import {HiPlus, HiDotsVertical} from "react-icons/hi";
 import HeaderItem from './HeaderItem';
 
-function header() {
+function Header() {
     const menu=[
         {
             name:'Home',
@@ -68,4 +68,4 @@ function header() {
   )
 }
 
-export default header
+export default Header
